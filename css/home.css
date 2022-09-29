@@ -1,5 +1,23 @@
 /* NOTE! ONLY CSS FOR "HOME / "INDEX.HTML" SHOULD BE LOCATED HERE. */
 
+#main-container {
+    width: 85%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%,
+    rgba(255,255,255,1) 65%,
+    rgba(0,212,255,0) 100%);
+    min-height: 500px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 1;
+	grid-column-end: 4;
+    padding: 5px;
+    gap: 10px;
+}
+
 .welcbox1 {
     grid-column-start: 1;
 	grid-column-end: 4;
@@ -98,8 +116,8 @@
 @media screen and (max-width: 768px) {
 
     #header-container {
-        border-top-left-radius: 15%;
-        border-top-right-radius: 15%;
+        border-top-left-radius: 35%;
+        border-top-right-radius: 35%;
     }
 
     #header-logo {
