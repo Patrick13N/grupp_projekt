@@ -1,0 +1,147 @@
+/* NOTE! ONLY CSS FOR "HOME / "INDEX.HTML" SHOULD BE LOCATED HERE. */
+
+.welcbox1 {
+    grid-column-start: 1;
+	grid-column-end: 4;
+    background-color: black;
+    min-height: 200px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.welcbox1 img {
+    border-radius: 25px;
+    width: 100%;
+}
+
+.welctext1 {
+    grid-column-start: 1;
+	grid-column-end: 4;
+    font-size: 26px;
+    background-color: rgba(0, 0, 0, 0.192);
+    position: relative;
+    bottom: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.welctext1 h1 {
+    
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.welctext1 p {
+    font-size: 24px;
+}
+
+.showbox1, .showbox2, .showbox3 {
+    background-color: rgba(0, 0, 0, 0.384);
+    min-height: 250px;
+    border-radius: 25px;
+}
+
+.showbox1 img, .showbox2 img, .showbox3 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow:0px 0px 8px 5px black;
+    -moz-box-shadow: 0px 0px 8px 2px light green;
+    box-shadow: 0px 0px 8px 2px light blue;
+    border-radius: 25px;
+  }
+
+  .showbox1 .mixtxt, .showbox2 .mastxt, .showbox3 .distxt {
+    box-sizing: content-box;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    left:0px;
+    visibility: hidden;
+    }
+
+  .showbox1:hover .mixtxt, .showbox2:hover .mastxt, .showbox3:hover .distxt {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  /* Adjusting appearance to smaller desktops and screen sizes */
+
+@media screen and (max-width:  1024px) and (min-width: 769px) {
+
+	#main-container {
+		width: 100%;
+	}
+
+    #navrow {
+        margin: 0 auto;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .welctext1 {
+        bottom: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    #header-container {
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;
+    }
+
+    #header-logo {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+    
+    #navrow {
+        margin: 0 auto;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        display: flex;
+        align-self: flex-end;
+    }
+
+	#main-container {
+		width: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 55%,
+        rgba(0, 0, 0, 0) 100%);
+	}
+
+    .welctext1 h1 {
+        font-size: 3.8vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .welctext1 {
+        bottom: 180px;
+    }
+
+    .welctext1 p {
+        font-size: 20px;
+    }
+
+    .zoom {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
