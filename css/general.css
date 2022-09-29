@@ -1,6 +1,10 @@
+/* NOTE! ONLY CSS THAT IS SHARED ACROSS ALL PAGES SHOULD BE LOCATED HERE. */
 
 * {
     color: white;
+    font-family: "Georgia", Serif;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,20 +35,15 @@ body {
     grid-row-end: 2;
 }
 
-#main-container {
-    background-color: white;
-}
-
 #navrow {
+    margin: 0 auto;
     grid-column-start: 2;
-	grid-column-end: 5;
+	grid-column-end: 4;
     display: flex;
     align-self: flex-end;
 }
 
 ul {
-    grid-column-start: 3;
-	grid-column-end: 5;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -57,8 +56,6 @@ li {
 }
 
 li a {
-    font-family:"Georgia", Serif;
-    font-size: 20px;
     display: block;
     text-align: center;
     padding: 16px;
@@ -67,11 +64,17 @@ li a {
   
 li a:hover {
     background-color: #ffffff96;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
 #main-container {
     width: 85%;
-    min-height: 1000px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%,
+    rgba(255,255,255,1) 65%,
+    rgba(0,212,255,0) 100%);
+    min-height: 500px;
     border-left: 5px solid black;
     border-right: 5px solid black;
     margin: 0 auto;
@@ -83,31 +86,13 @@ li a:hover {
     gap: 10px;
 }
 
-.welcbox1 {
-    grid-column-start: 1;
-	grid-column-end: 4;
-    background-color: wheat;
-    min-height: 500px;
-    border-radius: 25px;
-    padding: 15px;
-}
-
-.showbox1, .showbox2, .showbox3 {
-    background-color: rgb(126, 108, 75);
-    min-height: 250px;
-    border-radius: 25px;
-    padding: 15px;
-}
-
 #footer-container {
-    min-height: 130px;
+    min-height: 110px;
 }
 
 .footer1 {
     grid-column-start: 1;
 	grid-column-end: 5;
-    font-family:"Georgia", Serif;
-    font-size: 20px;
     text-align: center;
     padding-top: 30px;
 }
