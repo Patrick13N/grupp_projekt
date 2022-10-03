@@ -39,7 +39,6 @@ body {
     margin: 0 auto;
     grid-column-start: 2;
 	grid-column-end: 4;
-    display: flex;
     align-self: flex-end;
 }
 
@@ -66,7 +65,7 @@ li a:hover {
     background-color: #ffffff96;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-  }
+}
 
 #footer-container {
     min-height: 110px;
