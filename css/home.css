@@ -29,9 +29,9 @@
     width: 100%;
     border-radius: 25px;
     border: 5px solid rgb(0, 0, 0);
-  }
+}
   
-  .welctext1 {
+.welctext1 {
     text-align: left;
     position: absolute;
     top: 82%;
@@ -41,7 +41,7 @@
     background-color: rgba(0, 0, 0, 0.192);
     width: 100%;
     padding-left: 10px;
-  }
+}
   
 
 .welctext1 h1 {
@@ -88,7 +88,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-  }
+}
   
 .zoom:hover {
     transform: scale(1.02);
@@ -147,6 +147,10 @@
         grid-column-start: 2;
         grid-column-end: 5;
     }
+
+    .welctext1 h1 {
+        font-size: 4.5vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -185,9 +189,12 @@
         min-height: 400px;
     }
 
+    .welctext1 {
+        top: 80%;
+    }
+
     .welctext1 h1 {
-        font-size: 3.8vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 4.5vw;
     }
 
     .welctext1 p {
@@ -211,6 +218,5 @@
         -webkit-box-shadow: 0px;
         -moz-box-shadow: 0px;
         box-shadow: none;
-        border-radius: 25px;
     }
 }
