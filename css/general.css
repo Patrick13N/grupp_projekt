@@ -1,19 +1,25 @@
 /* NOTE! ONLY CSS THAT IS SHARED ACROSS ALL PAGES SHOULD BE LOCATED HERE. */
 
+:root {
+    --textcolor: #ffffff;
+    --bodybgcolor: rgb(209, 209, 209);
+    --headerfootercolor: #000000;
+}
+
 * {
-    color: white;
+    color: var(--textcolor);
     font-family: "Georgia", Serif;
     font-size: 20px;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(209, 209, 209);
+    background-color: var(--bodybgcolor);
 }
 
 #header-container, #footer-container {
     min-height: 100px;
-    background-color: black;
+    background-color: var(--headerfootercolor);
     padding-left: 10px;
     padding-top: 5px;
     display: grid;
